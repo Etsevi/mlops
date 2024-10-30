@@ -1,0 +1,33 @@
+artifact_path: C:/Users/aziab/OneDrive/Documents/Projet_Mlops/artifacts/logistic_regression_model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.4
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.5.2
+mlflow_version: 2.17.0
+model_size_bytes: 2227
+model_uuid: c084b3ee99df4bdca71e450954ce409f
+run_id: f785750abf124af7a56b3c4046e0112f
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "double", "name": "loan_amt_outstanding", "required": true},
+    {"type": "double", "name": "total_debt_outstanding", "required": true}, {"type":
+    "double", "name": "income", "required": true}, {"type": "long", "name": "years_employed",
+    "required": true}, {"type": "long", "name": "fico_score", "required": true}, {"type":
+    "long", "name": "credit_lines_outstanding", "required": true}]'
+  outputs: null
+  params: null
+utc_time_created: '2024-10-29 16:46:08.213325'
