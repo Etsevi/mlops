@@ -1,7 +1,7 @@
 name: Github-Docker Hub MLOps pipeline - AZIABLE
 
 
-projet_env:
+env:
   DOCKER_USER: ${{secrets.DOCKER_USER}}
   DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
   REPO_NAME: ${{secrets.REPO_NAME}}
